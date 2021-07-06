@@ -1,22 +1,21 @@
 
-*{margin:0px;padding: 0px; list-style: none;text-decoration: none;box-sizing: border-box; /*border:1px red solid*/}
+*{margin:0px;padding: 0px; list-style: none;text-decoration: none;box-sizing: border-box; /*border:1px red solid;*/}
 /* border box asegura que se el borde no cambie la posicion de los elementos*/
 body {background: linear-gradient( to bottom,#45D09D  ,#406FAB 35% ); background-size: 100vh; }
-/*  .contenedor { /*display: flex;flex-wrap: wrap;*//*position: relative; margin: auto; width: auto; height: auto;*//*justify-content: center;}*/
+/*  .contenedor { /*display: flex;flex-wrap: wrap;*//*position: relative; margin: auto; width: auto; height: auto;*//*justify-;content: center;}*/
 
 /*=============================================
-=           Header          =
-=============================================*/
-
+=           Header          =============================================*/
+header .fila .col-lg-1 { visibility: hidden; }
 #header {display:flex; align-items: center; /*justify-content: space-around; */}
 #register{height: 100vh;}
 #logotipo {font-family: roboto; font-size: 70px;color: #00204A;text-align: center; align-items: flex-end;}
 #search-box input {height:50px; width: 409.5px; font-family: Roboto; font-size:25px; text-align: center;}
 input { background-color:none  ; border: none;}
+#session {display: flex; justify-content: space-around;}
 #login-button {height:50px; width: 234px; border-radius: 33px;background:#02234E;padding-top: 12px;position: relative;right: 20px;}
 #register-button {height:50px; width: 234px; border-radius: 33px;background:#D1BF21;padding-top: 12px; }
 center span{font-size: 22px;font-family: roboto;font-style: bold; }
-#session {display: flex; justify-content: space-around;}
 
 
 
@@ -25,8 +24,8 @@ center span{font-size: 22px;font-family: roboto;font-style: bold; }
 ===============================================*/
 
 .main-cover {display: flex; flex-wrap: wrap; justify-content: center; width: 100%; }
- .cover {display: flex; justify-content: space-between; align-content: center; width: 1514px; height: 462.1px; background-color: white; border: solid white 5px; position: relative;}
-.images{position: relative;margin-top: 0px;display: inline-flex;background: white; margin-right: 0px;margin-left: 0px;}
+/* .cover {display: flex; justify-content: space-between; align-content: center; width: 1514px; height: 462.1px; background-color: white; border: solid white 5px; position: relative;}
+*/.images{position: relative;margin-top: 0px;display: inline-flex;background: white; margin-right: 0px;margin-left: 0px;}
 .cover-image {filter:blur(5px); width: 490px; height: 462.1px;z-index:1;}
 .miniature {position: absolute;  height: 253px;width: 224px;z-index: 2; top: 35px;  left: 20px; border: solid white 2px; float: left;}
 .text-cover {position: absolute;top: 33px; left:  264px; z-index:3;margin-right: 39px;color: white;}
