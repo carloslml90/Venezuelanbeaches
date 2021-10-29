@@ -1,20 +1,21 @@
 
-*{margin:0px;padding: 0px; list-style: none;text-decoration: none;box-sizing: border-box; /*border:1px red solid;*/}
+*{margin:0px;padding: 0px; list-style: none;text-decoration: none;box-sizing: border-box; border:1px red solid;}
 /* border box asegura que se el borde no cambie la posicion de los elementos*/
-body {background: linear-gradient( to bottom,#45D09D  ,#406FAB 35% ); background-size: 100vh; }
+body {background: linear-gradient( to bottom,#45D09D  ,#406FAB 35% ); background-size: 100vh; width:100%; }
 /*  .contenedor { /*display: flex;flex-wrap: wrap;*//*position: relative; margin: auto; width: auto; height: auto;*//*justify-;content: center;}*/
 
 /*=============================================
-=           Header          =============================================*/
+=           Header    
+  =============================================*/
 header .fila .col-lg-1 { visibility: hidden; }
 #header {display:flex; align-items: center; /*justify-content: space-around; */}
 #register{height: 100vh;}
 #logotipo {font-family: roboto; font-size: 70px;color: #00204A;text-align: center; align-items: flex-end;}
-#search-box input {height:50px; width: 409.5px; font-family: Roboto; font-size:25px; text-align: center;}
+#search-box input {height:50px; width: 409.5px; font-family: Roboto; font-size:25px; text-align: center; margin-left: 190px;}
 input { background-color:none  ; border: none;}
 #session {display: flex; justify-content: space-around;}
 #login-button {height:50px; width: 234px; border-radius: 33px;background:#02234E;padding-top: 12px;position: relative;right: 20px;}
-#register-button {height:50px; width: 234px; border-radius: 33px;background:#D1BF21;padding-top: 12px; }
+#register-button {height:50px; width: 234px; border-radius: 33px;background:#D1BF21;padding-top: 12px;}
 center span{font-size: 22px;font-family: roboto;font-style: bold; }
 
 
@@ -23,23 +24,23 @@ center span{font-size: 22px;font-family: roboto;font-style: bold; }
 =           Main cover         =
 ===============================================*/
 
-.main-cover {display: flex; flex-wrap: wrap; justify-content: center; width: 100%; }
-/* .cover {display: flex; justify-content: space-between; align-content: center; width: 1514px; height: 462.1px; background-color: white; border: solid white 5px; position: relative;}
-*/.images{position: relative;margin-top: 0px;display: inline-flex;background: white; margin-right: 0px;margin-left: 0px;}
-.cover-image {filter:blur(5px); width: 490px; height: 462.1px;z-index:1;}
-.miniature {position: absolute;  height: 253px;width: 224px;z-index: 2; top: 35px;  left: 20px; border: solid white 2px; float: left;}
-.text-cover {position: absolute;top: 33px; left:  264px; z-index:3;margin-right: 39px;color: white;}
+.main-cover {display: flex;/* flex-wrap: wrap;*/ justify-content: center; width: 100%;height: auto; }
+/*.cover {overflow-y:scroll ;}*/
+/* .cover {display: flex; justify-content: space-between; align-content: center; width: 1514px; height: 462.1px; background-color: white; border: solid white 5px; position: relative;}*/.images{position: relative;margin-top: 0px;display: inline-flex;background: white; margin-right: 0px;margin-left: 0px;}
+.cover-image {filter:blur(3px); width: 600px; height: 462.1px;z-index:1;;}
+.text-cover {position: absolute;top: 33px; left:  264px; z-index:3;margin-right: 39px;color: white; /*float: right;*//* overflow-y: hidden;*/}
 .title-text {font-family: roboto; font-size:20px; font-style: bold; text-align: left;} 
-.subtitle-text {font-family: roboto; font-size: 16px; text-align: left;position: absolute; top: 15%; font-style: italic;color: white;} 
+.subtitle-text {font-family: roboto; font-size: 16px; text-align: left;/*position: absolute; top: 15%; */font-style: italic;color: white;} 
 .description-text {font-family: roboto; font-style:bold; font-size: 18px; text-align: left;line-height: 25px;text-align: justify;color: white;}
-
+.miniature {position: absolute;  height: 230px;width: 200px;z-index: 2; top: 35px;  left: 20px; border: solid white 2px; float: left;}
+.fa-umbrella-beach{font-size: 3em; color: white;position: absolute;top: 350px;left: 200px;}
 
 /*===============================================
 =            States beaches links             =
 ===============================================*/
 
 #tittle h2{font-size: 37px;text-align:center; padding: 30px;}
-nav .fila {padding: 22px; /*display: flex; justify-content:center;*/ align-content: space-between; }
+nav .fila {padding: 22px; display: flex; justify-content:center; align-content: space-between; }
 nav button{ background-color: #02234E; border-radius: 34px; margin: 20px; height: 50px;width: 234px;}
 button span {font-size: 22px; font-family: roboto; text-align: center;}
 
@@ -47,6 +48,8 @@ button span {font-size: 22px; font-family: roboto; text-align: center;}
 /*========================
 =   Most visited         =
 ========================*/
+
+
 
 
 #Session2 {position: relative; top: 100px; bottom: 200px;}
@@ -130,7 +133,14 @@ h2 {z-index: 5; font-size:50px; position: relative; padding: 70px; text-align: c
 .col-md-2 {width: 16.66666667%;}
 .col-md-1 {width: 8.33333333%;}
 .col-lg-0 {display: none;}
- }
+.cover-image {width: 50%;}
+.text-cover  {width: 50%;}
+.title-text  {width: 50%;}
+.subtitle-text {width: 50%;}
+.description-text  {width: 50%;}
+.miniature {width: 50%;}
+.fa-umbrella-beach {width: 50%;}
+}
 
 /* small devices  */
 
@@ -174,9 +184,13 @@ h2 {z-index: 5; font-size:50px; position: relative; padding: 70px; text-align: c
 .col-xs-2 {width: 16.66666667%;}
 .col-xs-1 {width: 8.33333333%;}
 .col-lg-0 {display: none;}
-/*.cover-image {width: 90%;}
-.mineature{width: 90%;}
- .images  {width: 90%;}
-}*/
+ .images  {width: 100%;float: left;}
+ 
+ .miniature { width: 40%; height: 40%;}
+  .title-text { font-size: 1em; position: relative;right: 50%;} 
 
-
+  .subtitle-text{font-size: 1em; position: relative;right: 50%;}
+  .description-text{font-size: 1em; position: relative;right: 50%;}
+text-cover{font-size: 1em;position: relative;right: 50%;}
+fa-umbrella-beach{font-size: 0.1rem;}
+}
