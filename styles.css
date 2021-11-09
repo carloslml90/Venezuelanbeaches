@@ -1,21 +1,21 @@
 
-*{margin:0px;padding: 0px; list-style: none;text-decoration: none;box-sizing: border-box; border:1px red solid;}
+*{margin:0px;padding: 0px; list-style: none;text-decoration: none;box-sizing: border-box; /*border:1px red solid;*/}
 /* border box asegura que se el borde no cambie la posicion de los elementos*/
-body {background: linear-gradient( to bottom,#45D09D  ,#406FAB 35% ); background-size: 100vh; width:100%; }
-/*  .contenedor { /*display: flex;flex-wrap: wrap;*//*position: relative; margin: auto; width: auto; height: auto;*//*justify-;content: center;}*/
+body {background: skyblue;/*linear-gradient( to bottom,#45D09D  ,#406FAB 35% )*/; background-size: 100vh; width:100%; }
 
+/*.contenedor {position: relative;}*/
 /*=============================================
 =           Header    
   =============================================*/
-header .fila .col-lg-1 { visibility: hidden; }
-#header {display:flex; align-items: center; /*justify-content: space-around; */}
-#register{height: 100vh;}
-#logotipo {font-family: roboto; font-size: 70px;color: #00204A;text-align: center; align-items: flex-end;}
-#search-box input {height:50px; width: 409.5px; font-family: Roboto; font-size:25px; text-align: center; margin-left: 190px;}
-input { background-color:none  ; border: none;}
-#session {display: flex; justify-content: space-around;}
-#login-button {height:50px; width: 234px; border-radius: 33px;background:#02234E;padding-top: 12px;position: relative;right: 20px;}
-#register-button {height:50px; width: 234px; border-radius: 33px;background:#D1BF21;padding-top: 12px;}
+
+#header {display:flex; align-items: center; /*justify-content: space-around;*/height: 500px; }
+
+#logotipo {font-family: roboto; font-size: 70px;color: white; display: flex;justify-content: center;}
+
+#search-box input {height:50px; width: 409.5px; font-family: Roboto; font-size:25px; text-align: center;align-content: center;}
+#session {display: flex; justify-content: center;/*position: relative;right: 190px;*/}
+#login-button {height:51px; width: 200px; border-radius: 33px;background:#02234E;padding-top: 12px;position: relative;right: 80px; margin-left: 20%;}
+#register-button {height:51px; width: 200px; border-radius: 33px;background:#D1BF21;padding-top: 12px;position:relative ; left: 60%;}
 center span{font-size: 22px;font-family: roboto;font-style: bold; }
 
 
@@ -23,27 +23,50 @@ center span{font-size: 22px;font-family: roboto;font-style: bold; }
 /*===============================================
 =           Main cover         =
 ===============================================*/
+.main-container {display: flex; justify-content: center; width: 100%; }
 
-.main-cover {display: flex;/* flex-wrap: wrap;*/ justify-content: center; width: 100%;height: auto; }
-/*.cover {overflow-y:scroll ;}*/
-/* .cover {display: flex; justify-content: space-between; align-content: center; width: 1514px; height: 462.1px; background-color: white; border: solid white 5px; position: relative;}*/.images{position: relative;margin-top: 0px;display: inline-flex;background: white; margin-right: 0px;margin-left: 0px;}
-.cover-image {filter:blur(3px); width: 600px; height: 462.1px;z-index:1;;}
-.text-cover {position: absolute;top: 33px; left:  264px; z-index:3;margin-right: 39px;color: white; /*float: right;*//* overflow-y: hidden;*/}
-.title-text {font-family: roboto; font-size:20px; font-style: bold; text-align: left;} 
-.subtitle-text {font-family: roboto; font-size: 16px; text-align: left;/*position: absolute; top: 15%; */font-style: italic;color: white;} 
-.description-text {font-family: roboto; font-style:bold; font-size: 18px; text-align: left;line-height: 25px;text-align: justify;color: white;}
-.miniature {position: absolute;  height: 230px;width: 200px;z-index: 2; top: 35px;  left: 20px; border: solid white 2px; float: left;}
-.fa-umbrella-beach{font-size: 3em; color: white;position: absolute;top: 350px;left: 200px;}
+.arrows {display: flex;}
+.cover {border: 5px solid white;}
+
+.main-cover { display: flex;  width:1200px;height: 463px;justify-content: center; position: relative;}
+
+.fa-chevron-left {font-size: 10em; color: gray; z-index: 5; ;width: 100%; align-self: center;}
+.fa-chevron-right {font-size: 10em; color: gray; z-index: 5; ;width: 100%;align-self: center;}
+
+
+.main-cover img:first-child {filter:blur(5px); opacity: 1;width: 600px; height: 450px;z-index:1;}
+.main-cover img:nth-of-type(2) {width:200px; height: 200px;z-index:2 ;position: relative;bottom: 400px;left:50px; border: 3px solid white; }
+.fa-umbrella-beach{color: white;font-size: 2em;position: relative;bottom:540px;right: 100px;z-index: 3;} 
+
+.cover-text{z-index: 3;position: relative;font-family: roboto; bottom:130%; width: 280px; left: 300px; height: 250px; } 
+
+span {color: white;}
+
+span h2 { font-size:20px ;font-style: bold; }
+
+span h3 {font-size:16px; font-style: italic;text-align: center;}
+
+span p {font-size:18px;text-align: justify;}
+
+
+figure button {width: 150px; height: 40px;background: #2EECA0; border-radius:33px ;z-index: 4; position: relative; bottom: 550px;color: white;left: 350px;}
+
+figure button span {font-family: roboto;font-size: 1em;color: white}
+
+
 
 /*===============================================
 =            States beaches links             =
 ===============================================*/
 
+#title { margin-top: 100px; margin-bottom: 100px; }
+nav li {display: flex;justify-content: center; flex-wrap: wrap;}
+li button { display: flex; align-items: center; justify-content: center; }
+
 #tittle h2{font-size: 37px;text-align:center; padding: 30px;}
 nav .fila {padding: 22px; display: flex; justify-content:center; align-content: space-between; }
-nav button{ background-color: #02234E; border-radius: 34px; margin: 20px; height: 50px;width: 234px;}
+nav button{ background-color: #02234E; border-radius: 34px; margin: 20px; height: 51px;width: 234px;}
 button span {font-size: 22px; font-family: roboto; text-align: center;}
-
 
 /*========================
 =   Most visited         =
@@ -52,21 +75,36 @@ button span {font-size: 22px; font-family: roboto; text-align: center;}
 
 
 
-#Session2 {position: relative; top: 100px; bottom: 200px;}
- h2 {align-self: center; font-family: roboto; font-style: bold; font-size-adjust: 30px;} 
- a {text-decoration: none; font-family: lato; font-size: 120%; font-weight: bold; color: white;}
-.gallery-container { height:2000px; width: 1800px; }
-.gallery {padding: 93px; margin: 0px 93px 93px 93px;display: inline-flex;flex-wrap: wrap;margin-right: 93px; padding: 100px;justify-content: space-between;}
-.image-gallery { border: solid white 3px; width: 384px; height: 320px; margin-bottom: 200px;margin:93px;}
+#Session2 {position: relative; top: 100px; bottom: 200px; margin-bottom: 150px;}
+ #title { font-family: roboto; font-style: bold; font-size: 60px;} 
+ .main-gallery {display: flex; justify-content: center; margin-bottom: 150px;}
+
+.gallery-container { height:1025x; width: 100%; display: flex;align-items: space-between;justify-content: center; }
+
+.image-gallery { border: solid white 3px; width: 384px; height: 320px; /*margin-bottom: 200px;*/margin: 93px;}
+
+
+
+
+
+.img {position: ;}
+.fa-star {color: yellow; font-size: 20px;margin: 10px;}
+.star {display: flex; justify-content: center; margin: 50px;}
+ h3 {display: flex; justify-content: center; text-align: center; /*height: 100px;*/ font-size: 30px; font-family: roboto; }
+h3:last-child {  font-style: italic; margin-top: 20px; }
 
 
 /*==============================
 =            Footer            =
+
 ==============================*/
 
 
- .footer {color: white;  background-color: grey; height: 320px; width: 100%; display: flex; align-items: center;}
- .footer  p {font-family: Roboto; font-size: 40px; text-align:center;}
+ .footer {color: white;  background-color: #02234E; height: auto; width: 100vw; display: flex; align-items: center; flex-wrap: wrap;}
+ .footer  p {font-family: Roboto; font-size: 40px; text-align:center; align-items: center; }
+
+.social {font-size: 5em; display: flex; justify-content: center; align-items: center;}
+.fa-twitter {margin:50px ;}
 
 
 /*=========================================
@@ -79,8 +117,49 @@ form {margin: 100px; font-size: 2rem; font-family:  verdana; font-style:bold;}
 input {height: 50px; width:300px;}
  #footer-session{color: white; bottom: 0px; height: 320px; background-color: grey; width: 100vw; display: flex; align-items: center; justify-content: center;}
 
+h2 {z-index: 5; font-size:50px; position: relative; /*padding: 70px;*/ text-align: center;}
 
-h2 {z-index: 5; font-size:50px; position: relative; padding: 70px; text-align: center;}
+/*===================================
+=            Beach-details             =
+===================================*/
+
+a {color: black;}
+
+.img-container {width: 100%; height: auto; display: flex;position: relative; align-items:center ;}
+.img-background { height:924px;  width: 100vw; z-index: 1;  opacity: 0.6; position: relative;}
+ 
+ .details-button {display: inline-block;background: #D1BF21; width: 200px; height: 34px; position: relative; bottom: 250px;  z-index: 3; border-radius: 33px; margin-right: 10px; }
+
+ .details-button span {font-family: roboto;font-size: 1em;font-style: bold; color: black;z-index: 2;}
+
+.text-detail-beach 
+
+{ width:40%;position: absolute; 
+  z-index: 2; top: 15%; right: 30%; 
+  transform: translate(50%,10%); 
+  justify-content: flex-end;
+  font-family: arial; }
+
+.text-detail-beach p {font-size: 25px ; line-height: 40px; text-indent: 20px; font-style: bold; font-weight: 500; text-align: justify;}
+
+.text-detail-beach h1 {text-align: center; font-size: 30px; text-align: left; }
+
+.text-detail-beach h2 {font-size: 16px; font-style: italic;  margin-bottom: 40px; margin-top: 10px; text-align: left;}
+
+.img-detail {position: absolute; left: 10%; top: 25%; z-index: 2; height: 40%; width: 30%; border: 1px solid white;}
+
+
+
+.fa-border-all {color: black; font-style: bold; margin-left: 10%; font-size: 1.5em;}
+.fa-map-pin {color: black; font-style: bold; margin-left: 10%; font-size: 1.5em;}
+button span {font-family:roboto;  font-size: 22px !important; font-weight: 800; }
+
+.beach-buttons {position: relative; right: 16%;}
+
+
+
+/*=====  End of Cayopaicla   ======*/
+
 
 /*======================================
 =            Column system             =
@@ -105,7 +184,7 @@ h2 {z-index: 5; font-size:50px; position: relative; padding: 70px; text-align: c
 .col-lg-6 {width: 50%;}
 .col-lg-5 {width: 41.67%;}
 
-.col-lg-4{width: 33,33333333%;}
+.col-lg-4{width: 33.33333333%;}
 
 .col-lg-3{width: 25%;}
 .col-lg-2 {width: 16.66666667%;}
@@ -127,12 +206,12 @@ h2 {z-index: 5; font-size:50px; position: relative; padding: 70px; text-align: c
 .col-md-6 {width: 50%;}
 .col-md-5 {width: 41.67%;}
 
-.col-md-4{width: 33,33333333%;}
+.col-md-4{width: 33.33333333%;}
 
 .col-md-3{width: 25%;}
 .col-md-2 {width: 16.66666667%;}
 .col-md-1 {width: 8.33333333%;}
-.col-lg-0 {display: none;}
+.col-md-0 {display: none;}
 .cover-image {width: 50%;}
 .text-cover  {width: 50%;}
 .title-text  {width: 50%;}
@@ -140,6 +219,8 @@ h2 {z-index: 5; font-size:50px; position: relative; padding: 70px; text-align: c
 .description-text  {width: 50%;}
 .miniature {width: 50%;}
 .fa-umbrella-beach {width: 50%;}
+.footer {width: 130%;}
+/*.img-detail {width: 50px;}*/
 }
 
 /* small devices  */
@@ -162,6 +243,7 @@ h2 {z-index: 5; font-size:50px; position: relative; padding: 70px; text-align: c
 .col-sm-2 {width: 16.66666667%;}
 .col-sm-1 {width: 8.33333333%;}
 .col-lg-0 {display: none;}
+.footer {width: 130%;}
  }
 
 /* extra small devices */
@@ -183,8 +265,8 @@ h2 {z-index: 5; font-size:50px; position: relative; padding: 70px; text-align: c
 .col-xs-3{width: 25%;}
 .col-xs-2 {width: 16.66666667%;}
 .col-xs-1 {width: 8.33333333%;}
-.col-lg-0 {display: none;}
- .images  {width: 100%;float: left;}
+.col-lg-0 {display: none;}}
+/* .images  {width: 100%;float: left;}
  
  .miniature { width: 40%; height: 40%;}
   .title-text { font-size: 1em; position: relative;right: 50%;} 
@@ -193,4 +275,5 @@ h2 {z-index: 5; font-size:50px; position: relative; padding: 70px; text-align: c
   .description-text{font-size: 1em; position: relative;right: 50%;}
 text-cover{font-size: 1em;position: relative;right: 50%;}
 fa-umbrella-beach{font-size: 0.1rem;}
-}
+}*/
+

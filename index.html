@@ -3,15 +3,15 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-<!-- 	<meta name="description" content="  Las mejores playas  que podrás visitar en cada uno de los estados de Venezuela">
+	<meta name="description" content="  Las mejores playas  que podrás visitar en cada uno de los estados de Venezuela">
 	<meta name="keywords" content="playas, Venezuela, estados de Venezuela, turismo, visita, conoce, explora, vive  ">
-	<meta name="robots" content="index"> -->
+	<meta name="robots" content="index">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" media="">
 <link rel="stylesheet" type="text/css" href="styles.css" >
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet" >
-<!-- <script src="https://kit.fontawesome.com/eff657ebaa.js" crossorigin="anonymous"></script> -->
-<link rel="stylesheet" href="css/all.min.css">
+<script src="https://kit.fontawesome.com/eff657ebaa.js" crossorigin="anonymous"></script>
+
 	<title>Playas de Venezuela  </title> </head>
 
 <body>
@@ -21,12 +21,13 @@
 <div class="fila">
 <!-- <div class="col-lg-1">*</div> -->
 <div id="header">	
-
-		<div class="col-lg-3 col-md-6 col-xs-12" > 
-		<center><h1 id="logotipo" > Logotipo</h1></center></div>
+	
+<!-- <div class="col-lg-1"></div> -->
+		<div class="col-lg-4 col-md-6  col-sm-12 col-xs-12" > 
+		<h1 id="logotipo" > Logotipo</h1></div>
 
 		<!--barra de busqueda  -->
-<div class="col-lg-5 col-md-6 col-xs-12"> <div id=search-box >
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"> <div id=search-box >
 	<center> <form  method="get">
 		<input id="search" type="search" name="buscar playa" placeholder="Buscar Playa"></form></center>
 	</div>
@@ -41,43 +42,44 @@
 	<center><a  href="login.html"><span >Login</span></a> </center></div></div>
 <div class="col-lg-2"><div id="register-button"> 
 	<center> <a  href="register.html"><span >Register</span></a></center></div></div></div>
- </div>  </div> 
+ </div>  </div> <div class="col-lg-1"></div>
  </div>
 
 
 	</header>
 	
 <!-- esta es el carrusel principal, donde se veran las principales playas-->
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="main-container">
+
 <div class="main-cover">
+	<iv class="arrows"> 
+<i class="fas fa-chevron-left"> </i>
 
-		<figure class="images">
-		<img  class="cover-image" src="Gallery/playaazul.jpg" alt="playa azul">
-	
-	<img  class="miniature"  src="Gallery/playaazul.jpg" alt="playa azul">
 
-				<div class="text-cover"> <span class="title-text"><h3>Playa azul</h3></span><br><span class="subtitle-text"><h4> Falcón </h4></span><br>
-					<span class="description-text"> <p> Playa Azul, Venezuela, es una de las tantas playas
+<figure  class="cover">
+	<img src="Gallery/playaazul.jpg" alt="playa azul"> <img src="Gallery/playaazul.jpg" alt="playa azul">
+		<div class="cover-text"> <span><h2 id="subtitle-cover">Playa Azul</h2><br>  <h3>Falcon</h3><br><p> Es una de las tantas playas
 		 situadas en el Parque Nacional Morrocoy, en el estado Falcón que debe estar presente en tu 
-		 lista de viajes.
- </p></span> <i class="fas fa-umbrella-beach"></i></div>
-	</figure>
-
-	<figure class="images">
-		<img  class="cover-image" src="Gallery/maritas.jpg" alt="playa maritas">
-		<img class="miniature"  src="Gallery/maritas.jpg" alt="playa maritas">
-	<div class="text-cover"><span class="title-text"><h3>Playa las Maritas
-</h3></span><br><span class="subtitle-text"><h4> Sucre </h4></span><br><span class="description-text"> <p> Este es uno de los lugares turísticos de Venezuela que no te puedes perder: Playa Las Maritas, tiene poca profundidad y olas suaves para nadar tranquilamente, sobre todo si vas con niños, tiene un encanto único.
- </p></span><i class="fas fa-umbrella-beach"></i></div></figure> 
-		<figure class="images">
-		<img class="cover-image"  src="Gallery/puntanueva.jpg" alt="playa punta nueva ">
-		<img class="miniature"  src="Gallery/puntanueva.jpg" alt="playa punta nueva ">
-		<div class="text-cover"> <span class="title-text"><h3>Playa punta nueva </h3></span><br><span class="subtitle-text"><h4> Nueva Esparta 
- </h4></span><br><span class="description-text"> <p> Playa La Punta es uno de los encantadores y paradisíacos rincones de la espectacular Isla de Coche, en el estado Nueva Esparta. Tiene un excelente desarrollo turístico por su poco oleaje y es de color azul intenso con tonalidades turquesa.</p></span>
-<i class="fas fa-umbrella-beach"></i></div>
+		 lista de viajes.</p></span></div>
+ <button><a href=""><span>Ver playa</span></a> </button>	
+ <i class="fas fa-umbrella-beach"></i>
 </figure>
 
+<figure class="cover">
+<img src="Gallery/playamedina.jpg" alt="playa medina">	
+<img src="Gallery/playamedina.jpg" alt="playa medina"><div class="cover-text"> <span><h2>Playa Las Maritas</h2><br> <h3>Edo Sucre</h3><br><p> Playa Las Maritas, tiene poca profundidad y olas suaves para nadar tranquilamente, sobre todo si vas con niños, tiene un encanto único.</p></span></div> <button><a href=""><span>Ver playa</span></a></button>
+<i class="fas fa-umbrella-beach"></i>
+</figure>
+<figure class="cover">
+ <img src="Gallery/puntanueva.jpg" alt="punta nueva">
+	<img src="Gallery/puntanueva.jpg" alt="playa medina"><div class="cover-text"> <span><h2>Playa punta nueva</h2><br> <h3>Nueva Esparta</h3><br><p>Playa La Punta es uno de los encantadores y paradisíacos rincones de la espectacular Isla de Coche, en el estado Nueva Esparta. </p></span></div> <button><a href=""><span>Ver playa</span></a> </button>
+	<i class="fas fa-umbrella-beach"></i>
+</figure>
+<i class="fas fa-chevron-right"> </i>
+</div></div>	
 </div>
-
+</div>
 <!--  states links -->
 <div class="fila">
 	<h2 id="title">Playas de Venezuela</h2> </div>
@@ -100,26 +102,58 @@
 <li class="col-lg-2 col-md-3 col-sm-8 col-xs-12" > <button ><a  href=""><span >Aragua</span></a></button></li>                            
 </div>
 </ul></nav>
+
+
 </div>
+
 
 <div class="fila" > 
 <h2 id="Session2">Las mas visitadas</h2></div>
-
-<div class="gallery-containter">
-	<figure class="gallery">
+<div class=main-gallery> 
+<div class="gallery-container">
+	<figure >
 		<div class="fila">
-	<img class= "image-gallery"src="Gallery/paiclas.jpg" alt="cayo paiclas">
-<img class= "image-gallery" src="Gallery/playaelyaque.jpg" alt="cayo paiclas">
-<img class= "image-gallery" src="Gallery/playacuyagua.jpg" alt="cayo paiclas">
+			<div class="col-lg-4 col-md-6 col-sm-8 col-xs-12">
+			
+	<a href="Cayo paicla.html"><img class= "image-gallery"src="Gallery/paiclas.jpg" alt="cayo paiclas"> <h3>Cayo Paiclas</h3> <h3> Morrocoy</h3></a><div class="star"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div></div>
 
-<img class= "image-gallery" src="Gallery/playacolorada.jpg" alt="cayo paiclas">
-<img class= "image-gallery" src="Gallery/playamedina.jpg" alt="cayo paiclas">
-<img class= "image-gallery" src="Gallery/playagrande.jpg" alt="cayo paiclas">
 
+	<div class="col-lg-4 col-md-6 col-sm-8 col-xs-12">
+
+		<img class= "image-gallery" src="Gallery/playaelyaque.jpg" alt="playa el yaque"> <h3>El Yaque</h3><br> <h3>Nueva esparta</h3><div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div></div>
+
+<div class="col-lg-4 col-md-6 col-sm-8 col-xs-12">
+
+<img class= "image-gallery" src="Gallery/playacuyagua.jpg" alt="Playa el agua"><h3>Cuyagua</h3><br> <h3>Vargas</h3><div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+</div></div>
+
+
+<div class="fila">
+
+	<div class="col-lg-4 col-md-6 col-sm-8 col-xs-12">
+
+
+<img class= "image-gallery" src="Gallery/playacolorada.jpg" alt="Playa colorada"><h3>Playa Colorada</h3> <br><h3>Sucre</h3><div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div></div> 
+	<div class="col-lg-4 col-md-6 col-sm-8 col-xs-12">
+
+
+<img class= "image-gallery" src="Gallery/playamedina.jpg" alt="Playa Medina"> <h3>Playa Medina</h3><br> <h3>Sucre</h3><div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div></div> 
+
+	<div class="col-lg-4 col-md-6 col-sm-8 col-xs-12">
+
+<img class= "image-gallery" src="Gallery/playagrande.jpg" alt="Playa Grande"><h3>Playa Grande</h3><br> <h3>Aragua</h3><div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div></div>
+</div>
 </figure>
 </div>
 
+
+
+</div>					
 <!--  Footer  -->
+
+
+
+
 
 <footer>
 
@@ -127,22 +161,23 @@
 
 	<div class="fila">
 
-	<div class="col-lg-3">
+	<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 	
-		<p >Logotipo</p>
-	</div >
-	<div class="col-lg-3">
+		<h1 id="logotipo" >Logotipo</h1></div>
 	
-	<p >Redes sociales</p> 
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+	
+	<br><br><br><p >Redes sociales</p> <div class="social"><i class="fab fa-facebook-f"></i> 
+		<i class="fab fa-twitter"></i> <i class="fab fa-instagram"></i></div>
 	</div>
-	<div class="col-lg-6">
-	<p > Contactanos:
+	<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+	<br><br> <br> <br>
+	<p > Contactanos</p> <br> <br>
 
-		Tusplayas@gmail.com
-	</p></div>
-</div></div>
-	
-</footer>
+		<p>Tusplayas@gmail.com</p>
+	</div>
 </div>
+</div>
+</footer>
 </body> 
 </html>
