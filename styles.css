@@ -12,14 +12,30 @@ body {margin: 0;background: linear-gradient(#45D09D  ,#406FAB 35%)}
 =           Header    
   =============================================*/
 
- .header {display:flex; justify-content: space-between; ; flex-wrap: wrap; background-color:#02234E ;align-items: center;  max-width: 1900px; height: 80%;}
+ .header {display:flex; justify-content: space-between; ; flex-wrap: wrap; background-color:#02234E ;align-items: center;  }
 button {background: transparent; border: none;}
 .logo-header {display: flex; justify-content: center; height: 100%; width: 100%;align-self: center;}
 
 #search-box input {height:100%;  font-family: Roboto; font-size:25px; text-align: center; }
 
 .session {display: flex; justify-content: space-around;text-align: center;  margin-right:20%; }
-#login-button {display:flex;height:3em; width: 10em; border-radius: 2em;background:gainsboro;padding: 2%;justify-content: center;}
+
+/* buttons */
+.btn-primary {display:flex;height:3em; width: 10em; border-radius: 2em;background:gainsboro;padding: 2%;justify-content: center;}
+ .btn-primary:hover {background-color:#45D09D; transform:scale(1.2); border-color: whitesmoke; border-width: 2px;}
+.btn-primary span {font-family: roboto;font-style: bold; font-size: 22px; text-align: center;;color: #02234E;}
+.modal-title {font-size: 2em;margin-left:40%; font-family: 'Titan One' ; color: white;}
+.modal-header {text-align: center;background-color: #02234E;}
+.modal-body {background:linear-gradient(#45D09D  ,#406FAB 35%);font-size: .5em ; } 
+.modal-footer .btn-primary{margin:0 auto;background-color: gainsboro;display: flex; align-items: center;background-color: #02234E;}
+
+.modal-footer .btn-primary span {font-family: roboto;font-style: bold; font-size: 1em; text-align: center;;color: gainsboro;}
+label  {font-size: 1em; font-family:  Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+input {margin: 5% 0%; border-radius: 30px;}
+::placeholder {text-transform: capitalize;text-align: center;}
+
+/* 
+#login-button {display:flex;height:3em; width: 10em; border-radius: 2em;background:gainsboro;padding: 2%;justify-content: center;} */
 #register-button  {display:flex;height:3em; width: 10em; border-radius: 2em;background:gainsboro;padding: 2%;justify-content: center;}
 /*
 center span {font-size: 22px;font-family: roboto;font-style: bold; }*/
@@ -75,7 +91,7 @@ button span {font-size: 22px; font-family: roboto; text-align: center; color: wh
  .main-gallery {display: flex; justify-content: center; padding-bottom: 20%; }
 .
 .gallery-container { height:800px; width: 100%; }
-h2 {text-decoration: none; color: black;}
+.gallery-container h2 {text-decoration: none; color: black;}
 .image-gallery { border: solid white 0.3em; width: 384px; height: 320px; /*margin-bottom: 200px;*/margin: 50px;}
 .fa-star {color: yellow; font-size: 20px;margin: 10px;}
 .star {display: flex; justify-content: center; margin: 50px;}
@@ -104,9 +120,9 @@ h2 {text-decoration: none; color: black;}
 =========================================*/
 
 
-form {margin: 100px; font-size: 2rem; font-family:  verdana; font-style:bold;}
+form {margin-left:5%;font-size: 1rem; font-family:  verdana; font-style:bold;}
 .formulary {margin-bottom:10px;}
-input {height: 50px; width:300px;}
+input {height: 3em; width:20em;}
  #footer-session{color: white; bottom: 0px; height: 320px; background-color: grey; width: 100vw; display: flex; align-items: center; justify-content: center;}
 
 h2 {z-index: 5; font-size:50px; position: relative; /*padding: 70px;*/ text-align: center;}
@@ -114,12 +130,13 @@ h2 {z-index: 5; font-size:50px; position: relative; /*padding: 70px;*/ text-alig
 /*===================================
 =            Beach-details             =
 ===================================*/
-.detail-beach { width: 30%;height: 50%; float: left;border: 0.5em solid white; margin-left: 5%;}
-.main-detail {height: 100%; background: linear-gradient(#45D09D  ,#406FAB 35%); padding: 5% 0%;}
-.container-beach {padding: 10% 0%; margin-bottom: 10%;}
-#detail-title {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size: 5em;font-size: 5em;}
-.text-beach{font-size: 3em;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; margin-left: 40%;margin-right: 20%; text-align: justify;}
-.footer {height: 100%;}
+.detail-beach { width: 30%;height: 40%; float: left;border: 0.5em solid white; margin-left: 10%; }
+.main-detail  {height: 80%;  /* padding: 5% 0%;  */margin-bottom: auto; padding: 0; display: block;}
+.container-beach {/* display:flex; flex-wrap: wrap; */
+  padding: 10% 0%; margin-bottom: 10%;}
+#detail-title {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size: 5em;margin-top: 10%; text-align: center;}
+.text-beach{font-size: 3em;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; margin-left: 50%;margin-right: 10%; text-align: justify;}
+
 
 
 
@@ -158,8 +175,8 @@ h2 {z-index: 5; font-size:50px; position: relative; /*padding: 70px;*/ text-alig
 .col-lg-0 {display: none;}
 .main-cover {flex-wrap: nowrap;}
 .menu-header {flex-wrap: nowrap;}
-#footer {height: 5%;}
-#header {width: 1200px;}
+
+
 }
 /*medium device   */
 
@@ -252,20 +269,31 @@ h2 {z-index: 5; font-size:50px; position: relative; /*padding: 70px;*/ text-alig
 .col-xs-2 {width: 16.66666667%;}
 .col-xs-1 {width: 8.33333333%;}
 .col-lg-0 {display: none;}
+/* responsive header  */
 .session{margin-bottom: 10%;}
 .logo-header{margin-top: 10%;}
-#footer {height: 5%; margin: auto; width: 100vw;clear: both;}
+#footer {height: 5%; width: 0;}
+
+
+
+
+/* responsive beach detail */
+.main-detail {height: 100vh;}
+.container-beach {padding: 10% 0%;}
+.detail-beach {width: 90%;}
+.text-beach {font-size: 1.5em;margin-left:10% ;padding-top: 10%; height:100% ; margin-top: 20%; }
+/* responsive main cover */
+.images {width: 100%;} 
+.cover-image{width: 100%; height:650px;}
+.link-cover { margin-right:20% ;}
+.miniature {height: 30%;}
 .main-cover {flex-wrap:wrap;flex-direction: column;}
-
-
-.images {width: 150%;} 
-.cover-image{width: 100%;}
 /* last-star permite crear un margen entre la ultima imagen y el footer para evitar que choquen en tamaños de pantalla xs */
 #last-star {margin-bottom:100%; ;}
 #states-title{font-size: 150%;}
 .menu-header{ flex-direction: column; align-items: center;padding: 5%;}
 .menu-header p {padding: 5% 0%;}
-.image-gallery {margin-left:20%;}
+/* .image-gallery {margin-left:20%;} */
 }
 
 
