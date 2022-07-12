@@ -225,7 +225,8 @@ h2 {z-index: 5; font-size:50px; position: relative; /*padding: 70px;*/ text-alig
 .images {width: 60%;} 
 .cover-image{width: 100%;}
 .states {justify-content: flex-start;}
-#footer {height: 5%; margin-right: 0;}}
+#footer {height: 5%; margin-right: 0;}
+.main-gallery{padding-bottom: 30%;}}
 
 
 
