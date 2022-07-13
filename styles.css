@@ -59,9 +59,9 @@ button span{  font-family: roboto;font-style: bold; font-size: 22px; text-align:
 .miniature {position: absolute;  height: 40%;width: 30%;z-index: 2; top: 5vh;  left: 2vh; border: solid white .3em; float: left;}
 .text-cover {position: absolute;top: 5%; left:  35%; z-index:3;margin: 0% 5%;color: white;padding: 5%; height: 80%;overflow: hidden;}
 .title-text {font-family: roboto; font-size:2em; font-style: bold; text-align: left;} 
-.subtitle-text {font-family: roboto; font-size: 1em; text-align: left;position: absolute; top: 25%; font-style: italic;color: white;} 
+.subtitle-text {font-family: roboto; font-size: 1rem; text-align: left; font-style: italic;color: white;} 
 .description-text {font-family: verdana; font-style:bold; font-size: 1.2em; text-align: left;line-height: 1.5em;text-align: left;color: white; }
-.link-cover {background-color:#02234E; border-radius: 20px; width: 50%;height: 10%; position: absolute; bottom: 0;}
+.link-cover {background-color:#02234E; border-radius: 20px; width: 8rem;height: 2rem; position: absolute; bottom: 0;}
 .fa-umbrella-beach {color: white; margin-left: 10%; font-size: 2em; position: absolute;bottom: 0;  margin-left: 70%;}
 
 
@@ -289,7 +289,7 @@ s
 /* responsive header  */
 .session{margin-bottom: 10%;}
 .logo-header{margin-top: 10%;}
-#footer {height: auto; width: auto; margin-right: 0;}
+#footer {height: auto; width: 100vw; margin-right: auto;}
 
 
 
@@ -316,6 +316,8 @@ s
 .container-beach {height: 100vh; margin-top: 10%; margin-bottom: 80%;}
 .detail-beach {margin-left: 5%;}
 .text-beach{margin-top: 20rem;}
+.text-cover {padding-bottom: 20rem;}
+
 
 /* .image-gallery {margin-left:20%;} */
 }
