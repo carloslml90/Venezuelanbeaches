@@ -1,13 +1,14 @@
 
 
-html {min-height: 100%;position:relative; }
-*{margin:0;padding: 0px; list-style: none;text-decoration: none;box-sizing: border-box;} 
+html {position:relative; min-width: auto; }
+*{margin:0;padding: 0px; list-style: none;text-decoration: none;box-sizing: border-box; } 
 /* border box asegura que se el borde no cambie la posicion de los elementos*/
-.main { max-width: 1900px;height: 100%;  align-content: center;justify-content: center;display:block; padding-bottom:5%;}
+.main { max-width: 1900px; align-content: center;justify-content: center;display:block; padding-bottom:5%;background: linear-gradient(#45D09D  ,#406FAB 35%); min-width: 100vh;}
 .menu-header a { color: white;}
  .menu-header {color: white;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman';font-size:  2em;display: flex; justify-content: space-around; padding-bottom: 3%;  font-weight: 900; flex-wrap: wrap;}
-body {margin: 0;background: linear-gradient(#45D09D  ,#406FAB 35%)}
+
 a {text-decoration: none;}
+body{width: 100vw; margin: auto;}
 /*=============================================
 =           Header    
   =============================================*/
@@ -16,12 +17,12 @@ a {text-decoration: none;}
 button {background: transparent; border: none;}
 .logo-header {display:flex;justify-content: center; height: 100%; width: 100%; }
 
-#search-box input {height:100%;  font-family: Roboto; font-size:25px; text-align: center; }
+#search-box input { height: 100%; width: 80%; font-family: Roboto; font-size:25px; text-align: center; }
 
-.session {display: flex; justify-content: space-around;text-align: center;  margin-right:20%; }
+.session {display: flex; justify-content: space-around;text-align: center; margin-right:20%;}
 
 /* buttons */
-.btn-primary {display:flex;height:3em; width: 10em; border-radius: 2em;background:gainsboro;padding: 2%;justify-content: center;}
+.btn-primary {display:flex;height: 3rem;width: 10rem; border-radius: 2rem;background:gainsboro;padding: 2%;justify-content: center;}
  .btn-primary:hover {background-color:#45D09D; transform:scale(1.2); border-color: whitesmoke; border-width: 2px;}
 .btn-primary span {font-family: roboto;font-style: bold; font-size: 22px; text-align: center;;color: #02234E;}
 .modal-title {font-size: 2em;margin-left:40%; font-family: 'Titan One' ; color: white;}
@@ -57,12 +58,12 @@ button span{  font-family: roboto;font-style: bold; font-size: 22px; text-align:
 .images{position: relative;margin: 0;display: inline-flex;border: white solid 0.3em; }
 .cover-image {filter:blur(0.5em); width:30em; height: 30em;z-index:1;}
 .miniature {position: absolute;  height: 40%;width: 30%;z-index: 2; top: 5vh;  left: 2vh; border: solid white .3em; float: left;}
-.text-cover {position: absolute;top: 5%; left:  35%; z-index:3;margin: 0% 5%;color: white;padding: 5%; height: 80%;overflow: hidden;}
+.text-cover {position: absolute;top: 5%; left:  35%; z-index:3;margin: 0% 5%;color: white;padding: 5%;overflow: hidden;height: 25rem;}
 .title-text {font-family: roboto; font-size:2em; font-style: bold; text-align: left;} 
 .subtitle-text {font-family: roboto; font-size: 1rem; text-align: left; font-style: italic;color: white;} 
-.description-text {font-family: verdana; font-style:bold; font-size: 1.2em; text-align: left;line-height: 1.5em;text-align: left;color: white; }
-.link-cover {background-color:#02234E; border-radius: 20px; width: 8rem;height: 2rem; position: absolute; bottom: 0;}
-.fa-umbrella-beach {color: white; margin-left: 10%; font-size: 2em; position: absolute;bottom: 0;  margin-left: 70%;}
+.description-text {font-family: verdana; font-style:bold; font-size: 1.2em; text-align: left;line-height: 1.5em;text-align: left;color: white; height: 100px; }
+.link-cover {background-color:#02234E; border-radius: 20px; width: 8rem;height: 2rem; position: absolute; bottom: 0; }
+.fa-umbrella-beach {color: white; margin-left: 10%; font-size: 2em; position: absolute;bottom: 2%;  margin-left: 5%;z-index: 4;}
 
 
 /*===============================================
@@ -74,7 +75,7 @@ button span{  font-family: roboto;font-style: bold; font-size: 22px; text-align:
  
 #states-title {font-family: roboto; font-style: bold; font-size: 3em;text-align:center;margin-bottom: 5%;}
 
-.states {display: flex; flex-wrap: wrap; justify-content: center; width: auto;  }
+.states {display: flex; flex-direction: column;  justify-content: center; width: auto;  }
 
 nav li  {margin: 1em;}
 
@@ -112,24 +113,29 @@ button span {font-size: 22px; font-family: roboto; text-align: center; color: wh
 ==============================*/
 
 
- #footer {color: white;  background-color: #02234E; height:20vh; width: 100vw; display: flex; align-items: center; flex-wrap: wrap; bottom: 0;  align-self: center; position: absolute;max-width: 1900px; }
+ #footer {color: white;  background-color: #02234E; height:auto; width: 100vw; display: flex; align-items: center; flex-wrap: wrap; bottom: 0;  align-self: center; position: absolute;max-width: 1900px; }
  #footer  p {font-family: Roboto; font-size: 20px; text-align:center; align-items: center; }
 #footer h2 { font-size:20px; font-family: 'roboto', 'Arial Narrow', Arial, sans-serif;padding-bottom: 5%;}
 .social { display: flex; justify-content: space-around; align-items: center;padding: 8%; }
 .fa-twitter {font-size: 3em;font-family: fontawesome;font-style: normal;}
 .fa-instagram {font-size: 3em;font-family: fontawesome;font-style: normal;}
 .fa-facebook-f {font-size: 3em;font-family: fontawesome;font-style: normal;}
-.logo {height: 20%;width: 20%;fill: goldenrod;}
+.logo {height: 10rem;width: 10rem;fill: goldenrod;}
 .logo-footer {display: flex;justify-content:center;}
 
 /*=========================================
 =            Register process             =
 =========================================*/
 
-.register-container {display: block;  justify-content:center ;  }
-.register-frame {border: 5px solid #02234E;}
-form {margin-left:5%;  }
-label {margin-bottom:10px; display: inline-flex; margin-right:5%; font-size: 2em; font-family: 'Times New Roman', Times, serif; font-style: bold; }
+
+.register-frame {display:flex; flex-direction:row; ;width: auto; flex-wrap: wrap;}
+.register-frame h1 {font-size: 1rem;}
+
+
+
+
+ form {margin-left:5%;  }
+label {margin-bottom:10px; display: inline-flex; margin-right:5%; font-size: 2rem; font-family: 'Times New Roman', Times, serif; font-style: bold; }
 input {height: 3em; width:15em;}
  #footer-session{color: white; bottom: 0px; height: 320px; background-color: grey; width: 100vw; display: flex; align-items: center; justify-content: center;}
  [type=radio] {height: 1.5rem;}
@@ -141,6 +147,9 @@ h2 {z-index: 5; font-size:50px; position: relative; /*padding: 70px;*/ text-alig
 .btn-success {width:10rem;}
 .space {height: 10vh;}
 .btn-container {display: flex;}
+#passwordInput {margin-left: 5rem;}
+[for*="pass"] {margin-left: 5rem;}
+.form-control {width: 15rem;}
 
 
 /*===================================
@@ -286,15 +295,18 @@ s
 .col-xs-2 {width: 16.66666667%;}
 .col-xs-1 {width: 8.33333333%;}
 .col-xs-0 {display: none;}
+/* body {margin: auto;} */
 /* responsive header  */
 .session{margin-bottom: 10%;}
 .logo-header{margin-top: 10%;}
-#footer {height: auto; width: 100vw; margin-right: auto;}
+#footer {height:auto; width: 100vw; margin-right: auto;bottom: 0;}
+.main {max-width: 300px;}
 
 
-
-
-
+/* .session {margin-right: 5rem;} */
+#login-buttom {margin-right: 20%;}
+.form-select {width: 50vw;}
+header {width: 100vw;}
 /* responsive beach detail */
 .main-detail {height: 100vh;}
 .container-beach {padding: 10% 0%;}
@@ -303,23 +315,35 @@ s
 /* responsive main cover */
 .images {width: 100%;} 
 .cover-image{width: 100%; height:650px;}
-.link-cover { margin-right:20% ;}
+.link-cover { margin-right:30% ;}
 .miniature {height: 30%;}
 .main-cover {flex-wrap:wrap;flex-direction: column;}
+
+
+
+
 /* last-star permite crear un margen entre la ultima imagen y el footer para evitar que choquen en tamaños de pantalla xs */
-#last-star {margin-bottom:100%; ;}
+/* #last-star {margin-bottom:100%; ;} */
 #states-title{font-size: 150%;}
 .menu-header{ flex-direction: column; align-items: center;padding: 5%;}
 .menu-header p {padding: 5% 0%;}
-.main {padding-bottom: 35%;}
-.form-select {col-6;}
+.main {padding-bottom: 35%; width: 100vw;}
 .container-beach {height: 100vh; margin-top: 10%; margin-bottom: 80%;}
 .detail-beach {margin-left: 5%;}
 .text-beach{margin-top: 20rem;}
 .text-cover {padding-bottom: 20rem;}
+#passwordInput, [for*="pass"]  {margin-left: 0;}
+
+ .btn-primary {width:7rem;}
 
 
-/* .image-gallery {margin-left:20%;} */
+.form-select {col-6;}
+.header {width: 100vw;}
+.image-gallery{width: 80%;}
+.gallery-container h2,h3 {font-size: 2rem; padding-bottom: 10%;}
+.main-gallery {padding-bottom: 50%;}
+
+/* .image-gallery {mar80in-left:20%;} */
 }
 
 

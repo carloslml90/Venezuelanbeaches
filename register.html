@@ -19,9 +19,10 @@
 
 	<title>Playas de Venezuela  </title> </head>
 
-<body class="main">
+<body>
 
-</body>
+	<div class="main">
+
 
 <header>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
@@ -41,11 +42,10 @@
 </div>
 
 
-<!--estos son los enlaces para registrarse  e iniciar sesion-->			
-
+<!--estos son los enlaces para registrarse
+Button trigger modal -->
 <div class="col-lg-4 col-md-12 col-xs-12" ><div class="session">
 <div class="col-lg-2 col-md-6 col-sm-6 col-xs-1">
-<!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
 <span >Log in</span>
 </button>
@@ -77,29 +77,44 @@
 </div>
 </div>
 </div>
-<div class="col-lg-2 col-md-6 col-sm-6 col-xs-1"><div id="register-button"> 
-<button> <a  href="register.html"><span >Sign up</span></a></button></div></div></div>
-</div>
+<div class="col-lg-2 col-md-6 col-sm-6 col-xs-1"><div class="btn btn-primary"> 
+<button> <a  href="register.html"><span >Sign up</span></a></button></div></div>
+
+<!-- registrarse  e iniciar sesion		
+ -->
 
 
 </header>
 
 <!-- Register process -->
 
-	<div class="main">
+		
 		<div class="register-frame "></div>
 	<h1>Completa el proceso de regitro</h1>
 	<form method="get">
 
-	<div class="fila">	 
+	
+	
 		<div class="col-lg-2 col-md-4 col-sm-6 col-xs-9">
 <label for="firstnameInput" class="form-label" >Firts name</label>
- <input class="form-control"   type="text" name="firtsname" required></div></div>
+ <input class="form-control"   type="text" name="firtsname" required></div>
+<div class="col-lg-2 col-md-4 col-sm-6 col-xs-9">
+<label for="passwordInput" class="form-label">Password</label>
+<input type="password" class="form-control"  id="passwordInput" required></div>
 
  <div class="fila">
+ 
 	<div class="col-lg-2 col-md-4 col-sm-6 col-xs-9">
 <label for="lastnameInput" class="form-label" >Last name </label>
-<input class="form-control " id="lastnameInput" type="text" name="Lastname" required=></div></div>
+<input class="form-control " id="lastnameInput" type="text" name="Lastname" required>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-9">
+<label for="passwordInput" class="form-label">Password Confirm</label>
+<input type="password" class="form-control"  id="passwordInput" required>
+
+</div></div>
+
+
 
 <div class="fila">
 <div class="col-lg-2 col-md-4 col-sm-6 col-xs-9">
@@ -156,7 +171,9 @@
 
 	</form>
 </div>
-<div class="space">dsadsa</div>
+</div>
+</body>
+
 	<footer id="footer">
 
 
@@ -190,6 +207,6 @@
 	
 
 
-</body>
+
 </html>	
 
