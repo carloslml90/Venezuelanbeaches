@@ -29,7 +29,7 @@
  		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
  		<div class="fila">
 			<div class="header">
-		 		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12" >
+		 		<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12" >
 			 		<div class="logo-header">
 						<img class="imagen-prueba" src="Gallery/nuevo_logo_web.png"> 
 					</div>
@@ -39,26 +39,28 @@
 				<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12"> 
 					<div id=search-box >
 	<center> <form  method="get">
-		<input id="search" type="search" name="buscar playa" placeholder="Buscar Playa"></form>	</center> 
-		<i class="fa-solid fa-magnifying-glass"></i></div>
+		<input id="search" type="search" name="buscar playa" placeholder="Buscar Playa"></form>	</center></i> 
+		</div>
 	</div>
 
 
 <!--estos son los enlaces para registrarse  e iniciar sesion-->			
 
- <div class="col-lg-4 col-md-12 col-xs-12" ><div class="session">
+ <div class="col-lg-4 col-md-12 col-xs-12" >
+	<div class="session">
 	<div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
 	<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" id="login-buttom" data-bs-toggle="modal" data-bs-target="#exampleModal">
-	<span >Log in</span>
-  </button>
+	<button type="button" class="btn btn-primary" id="login-buttom" data-bs-toggle="modal" data-bs-target="#exampleModal">
+		<span >Log in</span>
+		
+	</button>
   
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
 	<div class="modal-dialog">
 	  <div class="modal-content">
-		<div class="modal-header">
-		  <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+		<!-- <div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Create account</h5> -->
 		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 		</div>
 		<div class="modal-body">
@@ -76,11 +78,12 @@
 	  </div>
 	</div>
   </div>
+  <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12"><div class="btn btn-primary" id="register-buttom">
+	  <button> <a  href="register.html"><span >Sign up</span></a></button></div></div>
 </div>
-<div class="col-lg-2 col-md-6 col-sm-6 col-xs-12"><div class="btn btn-primary" id="register-buttom">
-	<button> <a  href="register.html"><span >Sign up</span></a></button></div></div>
 </div>
-</div>
+</div>  
+</div>  
 
 
 </header>
@@ -128,18 +131,29 @@
 			
 			<div class="states">
 			<nav >
+			
 			<ul>	
 			
-			<li class="col-lg-2 col-md-3 col-sm-4 col-xs-5" > <button ><a  href=""><span >Miranda</span></a></button></li>                            
-			<li class="col-lg-2 col-md-3 col-sm-4 col-xs-5" ><button  ><a  href=""><span >La Guaira</span></a></button></li>                             
-			<li class="col-lg-2 col-md-3 col-sm-4 col-xs-5"><button ><a  href=""><span >Anzoategui</span></a></button></li>                             
-			<li class="col-lg-2 col-md-3 col-sm-4 col-xs-5" > <button ><a  href=""><span >Nueva Esparta</span></a></button></li>                            
-			<li class="col-lg-2 col-md-3 col-sm-4 col-xs-5" > <button  ><a  href=""><span> Zulia</span></a></button></li>                            
-			<li class="col-lg-2 col-md-3 col-sm-4 col-xs-5" ><button ><a  href=""><span >Sucre</span></a></button></li>                             
-			<li class="col-lg-2 col-md-3 col-sm-4 col-xs-5" > <button ><a  href=""><span >Aragua</span></a></button></li>                            
-			<li class="col-lg-2 col-md-3 col-sm-4 col-xs-5" ><button  ><a  href=""><span >Monagas</span></a></button></li>                             
-			<li class="col-lg-2 col-md-3 col-sm-4 col-xs-5" ><button  ><a  href=""><span >Falcón</span></a></button></li>                             
-			<li class="col-lg-2 col-md-3 col-sm-4 col-xs-5" ><button ><a  href=""><span >Carabobo</span></a></button></li>
+			<div class="state-center"><li class="col-lg-2 col-md-3 col-sm-4 col-xs-5" > <center><button ><a  href=""><span >Miranda</span></a></button></li></center></div>
+			                          
+			<div class="state-center"><li class="col-lg-2 col-md-3 col-sm-4 col-xs-5" ><center><button  ><a  href=""><span >La Guaira</span></a></button></li></center></div>
+		                           
+			<div class="state-center"><li class="col-lg-2 col-md-3 col-sm-4 col-xs-5"><center><button ><a  href=""><span >Anzoategui</span></a></button></li></center></div>
+			                             
+			<div class="state-center"><li class="col-lg-2 col-md-3 col-sm-4 col-xs-5" ><center> <button ><a  href=""><span >Nueva Esparta</span></a></button>
+			</li></center></div>                            
+			<div class="state-center"><li class="col-lg-2 col-md-3 col-sm-4 col-xs-5" ><center> <button  ><a  href=""><span> Zulia</span></a></button></li></center></div>
+			                         
+			<div class="state-center"><li class="col-lg-2 col-md-3 col-sm-4 col-xs-5" ><center><button ><a  href=""><span >Sucre</span></a></button></li></center>
+			</div>                            
+			<div class="state-center"><li class="col-lg-2 col-md-3 col-sm-4 col-xs-5" ><center> <button ><a  href=""><span >Aragua</span></a></button></li></center></div>
+			                         
+			<div class="state-center"><li class="col-lg-2 col-md-3 col-sm-4 col-xs-5" ><center><button  ><a  href=""><span >Monagas</span></a></button></li></center></div>
+			                           
+			<div class="state-center"><li class="col-lg-2 col-md-3 col-sm-4 col-xs-5" ><center><button  ><a  href=""><span >Falcón</span></a></button></li></center></div>
+			                          
+			<div class="state-center"><li class="col-lg-2 col-md-3 col-sm-4 col-xs-5" ><center><button ><a  href=""><span >Carabobo</span></a></button></li></center></div>
+			
 			
 			
 			
@@ -160,13 +174,13 @@
 			   
 				   <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12">
 					   <center>	
-			<a href="Cayo paicla.html"><img class= "image-gallery"src="Gallery/paiclas.jpg" alt="cayo paiclas"></center>	 <center><h2>Cayo Paiclas</h2></center><br> <h3> Morrocoy</h3></a>
+			<a href="Cayo paicla.html"><img class= "image-gallery"src="Gallery/paiclas.jpg" alt="cayo paiclas"></center><center><h2>Cayo Paiclas</h2></center><br> <h3> Morrocoy</h3></a>
 			<div class="star"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div></div>
 			
 			
 			<div class="col-lg-4 col-md-6 col-sm-8 col-xs-12">
 			<center>
-			   <img class= "image-gallery" src="Gallery/playaelyaque.jpg" alt="playa el yaque"></center> <center><h2>El Yaque</h2></center><br> <h3>Nueva esparta</h3><div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div></div>
+				<a href="Cayo paicla.html"><img class= "image-gallery" src="Gallery/playaelyaque.jpg" alt="playa el yaque"></center> <center><h2>El Yaque</h2></center><br> <h3>Nueva esparta</h3></a><div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div></div>
 			
 			<div class="col-lg-4 col-md-6 col-sm-8 col-xs-12">
 			<center>
